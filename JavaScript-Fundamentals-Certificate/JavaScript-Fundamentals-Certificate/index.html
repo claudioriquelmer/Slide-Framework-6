@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>JavaScript ® Fundamentals</title>
+
+    <!-- Slides CSS -->
+    <link rel="stylesheet" href="assets/css/slides.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- JQuery JS -->
+    <script src="assets/js/jquery.min.js" defer></script>
+
+    <!-- Slides JS -->
+    <script src="assets/js/slides.min.js" defer></script>
+
+    <!-- Custom Vanilla JS -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- SweetAlert2 11.0.0 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer ></script>
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body class="slides scroll smoothScroll animateOnEvent" style="overflow: hidden;">
+
+
+
+<!-- Navbar -->
+<nav class="panel top margin-top-1">
+    <div class="sections desktop">
+        <div class="left"><a href="#" class="opacity-5"><svg style="width:50px;height:50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#github"></use></svg></a></div>
+        <div class="right">
+            <ul class="menu">
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Upgrade</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Explore</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sections compact hidden">
+        <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#logo"></use></svg></a></div>
+        <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#menu"></use></svg></span></div>
+    </div>
+</nav>
+
+
+
+<!-- Homepage -->
+<section class="slide whiteSlide animate" >
+    <div class="content">
+        <div class="container">
+            <div class="wrap">
+                <div class="fix-12-12">
+                    <ul class="flex verticalCenter">
+
+
+                        <li class="col-6-12 col-tablet-1-2 col-phablet-1-1 padding-top-10 padding-top-phablet-0 padding-bottom-10 padding-bottom-phablet-5 align-left">
+                            <h1 class="margin-bottom-1 smaller lato weight-3 opacity-5">Formulario de Contacto</h1>
+
+
+                            <ul class="flex">
+                                <li class="col-11-12 col-tablet-1-1">
+                                    <p class="margin-bottom-5 margin-bottom-phablet-1 small opacity-8 weight-3 done">Loren hipster ipsu raw denim plaid wolf man braid put a bird on it disrupt humblebrag ugh adaptogen schlitz umami tacos man braid pug taiyaki beard.</p>
+                                </li>
+                            </ul>
+
+
+                        </li>
+                        <li class="col-5-12 col-tablet-1-2 col-phablet-1-1 toRight">
+
+                            <div class="pad pad-109 padding-5 padding-tablet-4 margin-bottom-tablet-4 margin-bottom-4 padding-phone-2 shadow done" >
+
+
+                                <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+
+                                <!-- Contact Form -->
+                                <form class="slides-form align-left" action="" method="POST" autocomplete="off" target="hidden_iframe" onsubmit="formSubmitted()">
+
+                                    <!-- Nombre Completo -->
+                                    <div class="margin-bottom-1 label">
+                                        <label class="crop opacity-5" for="name">Nombre Completo</label>
+                                    </div>
+                                    <input class="crop rounded wide margin-bottom-1" type="text" id="name" name="name" placeholder="Nombre Apellido" required>
+
+                                    <!-- RUT -->
+                                    <div class="margin-bottom-1 label">
+                                        <label class="crop opacity-5" for="rut">RUT</label>
+                                    </div>
+                                    <input class="crop rounded wide margin-bottom-1" id="rut" type="text" name="rut" placeholder="RUT" required>
+
+                                    <!-- Email Address -->
+                                    <div class="margin-bottom-1 label">
+                                        <label class="crop opacity-5" for="email">Correo Electrónico</label>
+                                    </div>
+                                    <input class="crop rounded wide" id="email" type="email" name="email" placeholder="Correo Electrónico" required>
+
+                                    <!-- WhatsApp -->
+                                    <div class="margin-bottom-1 label">
+                                        <label class="crop opacity-5" for="whatsapp">WhatsApp</label>
+                                    </div>
+                                    <input class="crop rounded wide margin-bottom-1" id="whatsapp" type="tel" name="whatsapp" placeholder="+569" required>
+
+                                    <!-- Servicio -->
+                                    <div class="margin-bottom-1 label">
+                                        <label class="crop opacity-5" for="service">Seleccione un Servicio</label>
+                                    </div>
+                                    <select class="margin-bottom-1 block wide" id="service" name="service" required>
+                                        <option value="" disabled selected>Selecciona un Servicio</option>
+                                        <option value="servicio-1">Servicio 1</option>
+                                        <option value="servicio-2">Servicio 2</option>
+                                        <option value="servicio-3">Servicio 3</option>
+                                    </select>
+
+                                    <!-- Terms and Conditions -->
+                                    <div class="margin-top-2">
+                                        <input class="checkbox margin-right-1" type="checkbox" id="terms" name="terms" value="1" checked>
+                                        <label class="crop opacity-5 inlineBlock weight-4" for="terms">Acepto los <a href="#" class="underline">Términos y Condiciones</a> del servicio</label>
+                                    </div>
+
+
+                                    <!-- Botón Enviar -->
+                                    <button type="submit" id="button_submit_form" class="crop margin-top-3 button rounded gray wide">Reservar Servicio</button>
+
+
+
+                                </form>
+
+                                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+
+                                <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+
+
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+<nav class="slide panel forceMobileView whiteSlide" style="margin-top: -115px;">
+
+    <div class="sections desktop">
+
+        <div class="center">
+
+            <h6 class="smallest weight-3">Avenida Apoquindo 6410, Oficina 605 | Las Condes, Santiago, Región Metropolitana, Chile </h6>
+            <h6 class="smallest weight-3 margin-bottom-2">©&nbsp;Todos los Derechos Reservados | WhatsApp +56 (9) 6192-3035 | Llamadas +56 (2) 2979-0027 | contacto@programadores.org</h6>
+
+            <ul class="menu crop opacity-6 margin-bottom-2">
+
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#facebook"></use></svg></a></li>
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#linkedin"></use></svg></a></li>
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#instagram"></use></svg></a></li>
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#whatsapp"></use></svg></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="sections compact hidden" style="margin-bottom: 45px">
+
+        <div class="center" >
+
+            <h6 class="smallest weight-3">Av. Apoquindo 6410, Of. 605 | Las Condes, Región Metropolitana</h6>
+            <h6 class="smallest weight-3 margin-bottom-2">©&nbsp;Todos los Derechos Reservados | contacto@programadores.org</h6>
+
+            <ul class="menu crop opacity-6">
+
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#facebook"></use></svg></a></li>
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#linkedin"></use></svg></a></li>
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#instagram"></use></svg></a></li>
+                <li><a href="#" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/svg/icon-set.svg#whatsapp"></use></svg></a></li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+</nav>
+
+
+
+
+</body>
+</html>
